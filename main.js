@@ -24,7 +24,7 @@ for(let i = 0; i < LISTA_INTERESSES.length; i++) {
         mostraTexto(idHabilidades)
     }
 }
-
+/*
 const descricoesHabilidades = {
     'habilidade-html': 'Tive a oportunidade de criar páginas dinâmicas no programa Alura Include',
     'habilidade-css': 'A ferramenta CSS é responsável pelo comportamento e estilo das páginas',
@@ -40,5 +40,4 @@ function mostraTexto (idHabilidades) {
     caixaDisplay.classList.remove('display-informacoes-interesses')
 
     texto.innerHTML = descricoesInteresses[idInteresse] || ''
-}
-
+}*/
