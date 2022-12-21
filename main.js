@@ -14,27 +14,26 @@ function fecharMenuMobile() {
 ICONE_MENU.onclick = abrirMenuMobile
 EXIT.onclick = fecharMenuMobile
 
-/*--- interesses ---*/
-const LISTA_INTERESSES = document.querySelectorAll('.icones-habilidades')
+const LISTA_HABILIDADES = document.querySelectorAll('.icones-habilidades')
 
 for(let i = 0; i < LISTA_INTERESSES.length; i++) {
-    const INTERESSE = LISTA_INTERESSES[i]
-    let idInteresse = INTERESSE.id
+    const HABILIDADE = LISTA_HABILIDADES[i]
+    let idHabilidades = HABILIDADE.id
     
-    INTERESSE.onclick = function() {
-        mostraTexto(idInteresse)
+    HABILIDADE.onclick = function() {
+        mostraTexto(idHabilidades)
     }
 }
 
-const descricoesInteresses = {
-    'habilidade-html': 'Super Mario World e Zelda marcaram minha infância! Amo as hacks do Super Luigi e God of War me fez ser apaixonada por História Antiga!',
-    'habilidade-css': 'É difícil escolher minha série favorita, então aqui vai meu TOP 3: Breaking Bad, The Office e Outlander!',
-    'habilidade-javascript': 'Adoro Pokémon! Os meus favoritos são o Jigglypuff e o Psyduck.',
-    'habilidade-javaoo': 'Sou apaixonada por viagens de aventura! Um dos lugares mais lindos que conheci foi a Amazônia e meu sonho é ir ao Monte Everest!',
-    'habilidade-git': 'Minhas aves favoritas são a Arara Canindé e o Sabiá-Laranjeira que tem um canto muito bonito!'
+const descricoesHabilidades = {
+    'habilidade-html': 'Tive a oportunidade de criar páginas dinâmicas no programa Alura Include',
+    'habilidade-css': 'A ferramenta CSS é responsável pelo comportamento e estilo das páginas',
+    'habilidade-javascript': 'Já com JavaScript pude desenvolver diversos projetos, todos estarão no meu Github.',
+    'habilidade-javaoo': 'Criei alguns projetos com JavaOO que me deixaram bastante satisfeito',
+    'habilidade-git': 'Vá no meu Github e confira!'
 }
 
-function mostraTexto (idInteresse) {
+function mostraTexto (idHabilidades) {
     let texto = document.querySelector('#texto-interesse')
     let caixaDisplay = document.querySelector('#caixa-texto-interesses')
 
