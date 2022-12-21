@@ -1,0 +1,42 @@
+header {
+    height: 52px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: url('https://i.ibb.co/896WzdP/cyberpunk-6061251-960-720-1.jpg');
+    color: #FF1493;
+    z-index: 3;
+}
+
+nav {
+    text-align: center;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+    margin: 16px 10px;
+}
+
+nav li:not(:last-child):after {
+    content: "•";
+    margin-left: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #6A5ACD;
+    transition: 0.3s color;
+}
+
+nav li a:hover{
+    color: #FF1493;
+}
+
+@media screen and (max-width:1040px) {
+    header {
+        display: none;
+        position: inline-block;
+        font-size: 16px;
+    }
+}

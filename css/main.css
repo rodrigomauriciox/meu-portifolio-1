@@ -1,0 +1,157 @@
+main {
+    background: black;
+    padding: 48px 0;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', monospace;
+
+}
+
+main div {
+    width: 1020px;
+    margin: 0 auto;    
+}
+
+.titulo, .titulo-habilidades {
+    font-size: 26px;
+    font-weight: bold;
+    color: #6A5ACD;
+    margin: 25px auto;
+}
+
+.titulo:hover, .titulo-habilidades:hover {
+    color: #FF1493;
+    transition: 0.3s;
+
+}
+
+.sobre-mim, .habilidades {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+
+.foto-sobre-mim, .foto-habilidades {
+    display: block;
+    position: relative;
+    align-items: center;
+    width: 200px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 1px 1px 25px #FF1493;
+    padding: 10px;
+    margin: 25px auto;
+    
+}
+
+.lista-habilidades {
+    padding: 10px;
+}
+
+.iconesjava {
+    width: 200px;
+}
+
+.iconesjava:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.7s transform;
+    margin: scale(1.2);
+}
+
+.texto-sobre-mim, .texto-habilidades {
+    display: block;
+    text-align: center;
+    width: 480px;
+    vertical-align: top;
+    right: 0;
+    top: 48px;
+}
+
+
+.background-texto {
+    box-shadow: 1px 1px 16px rgba(82, 4, 56, 0.5);
+    color: rgb(255, 229, 229);
+    padding: 18px;
+    display: inline-block;
+    border-radius: 8px;
+    width: 45%;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 100px;
+}
+
+.background-texto a {
+    color: rgb(255, 229, 229);
+}
+
+.margem-caixas {
+    margin: 2.3%;
+}
+
+.icones-interesses {
+    width: 80px;
+    transition: 0.7s transform;
+}
+
+.icones-interesses:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.display-informacoes-interesses {
+    display: none;
+}
+
+
+@media screen and (max-width:1040px) {
+    main {
+        padding: 16px 0;
+    }
+
+    main div {
+        width: 340px;
+        padding: 8px;
+    }
+
+    .foto-sobre-mim, .foto-habilidades  {
+        width: 100%;
+        opacity: 0.3;
+        margin: : 10px;
+        position: relative;
+    }
+
+    .texto-sobre-mim, .texto-habilidades {
+        width: 300px;
+        text-align: center;
+        right: 0;
+        left: 0;
+        top: 50;
+        margin: 0 auto;
+        position: absolute;
+    }
+
+    .titulo,  .titulo-habilidades{
+        margin-bottom: 8px;
+        margin-top: 8px;
+        text-align: center;
+
+    }
+    .habilidades {
+        bottom: 100px;
+    }
+
+    .background-texto {
+        font-size: 13px;
+        width: 100%;
+        height: 88px;
+    }
+
+    .margem-caixas {
+        margin: 0 0 2.3% 0;
+    }
+
+    .icones-interesses {
+        width: 60px;
+    }
+}
